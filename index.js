@@ -1,7 +1,8 @@
 import fetch from "node-fetch";
-import cheerio from "cheerio";
+import * as cheerio from "cheerio";
 import dotenv from "dotenv";
 dotenv.config();
+
 
 async function scrapeChrono24(reference) {
   const url = `https://www.chrono24.com/search/index.htm?query=${encodeURIComponent(reference)}`;
